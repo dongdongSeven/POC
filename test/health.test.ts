@@ -1,9 +1,9 @@
 import request from 'supertest';
-import app from '../src/app'; // Adjust the path if necessary
-import HealthService from '../src/services/health.service';
+import app from '../src/app';
+import { HealthService } from '../src/services/health.service';
 
 describe('Health Check', () => {
-  let healthService;
+  let healthService: HealthService;
 
   beforeAll(() => {
     healthService = new HealthService();

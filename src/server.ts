@@ -1,6 +1,6 @@
 import { createServer } from 'http';
 import { configuration } from './config';
-import app from '../app';
+import app from './app';
 
 const PORT = configuration.port;
 
